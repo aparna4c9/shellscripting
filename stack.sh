@@ -141,12 +141,12 @@ Stat $?
 
 Step "Starting API Service"
 Run "systemctl restart studentapi"
-RUN "yum install mariadb mariadb-server -y"
-RUN "systemctl enable MariaDB"
-RUN "systemctl start MariaDB"
+Run "yum install mariadb mariadb-server -y"
+Run "systemctl enable MariaDB"
+Run "systemctl start MariaDB"
 
 
 Run "wget https://s3-us-west-2.amazonaws.com/studentapi-cit/studentapp-ui-proj1.sql -O /tmp/studentapp.sql"
-RUN "sudo mysql </tmp/studentapp.sql"
+Run "sudo mysql </tmp/studentapp.sql"
 
-RUN "systemctl restart MariaDB"
+Run "systemctl restart MariaDB"
