@@ -150,3 +150,4 @@ Run "wget https://s3-us-west-2.amazonaws.com/studentapi-cit/studentapp-ui-proj1.
 Run "sudo mysql </tmp/studentapp.sql"
 
 Run "systemctl restart MariaDB"
+
